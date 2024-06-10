@@ -1,0 +1,173 @@
+/* App.css */
+
+/* Header */
+.header {
+  background-color: #00668B; /* Royal blue */
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-primary
+{
+    background-color: #00668B !important;
+}
+.btn-primary
+{
+    background-color: #00668B !important;
+} 
+
+
+
+.header h1 {
+  margin: 0;
+}
+
+/* Top Bar */
+.top-bar {
+  background-color: #4169E1; /* Royal blue */
+  color: #fff;
+  padding: 10px;
+  height: 60px;
+  text-align: center;
+}
+
+/* Footer */
+.footer {
+  background-color: #4169E1; /* Royal blue */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/* Main Content */
+.main-content {
+  padding: 20px;
+  margin-bottom: 80px; /* Adjust margin for sticky footer */
+}
+
+/* Sticky Footer adjustments */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full height */
+}
+
+.content-wrap {
+  flex: 1;
+}
+.sidebar {
+  padding: 10px;
+  background-color: aliceblue;
+  width:15%;
+}
+
+/* Table */
+.table th {
+  background-color: #00668B; /* Royal blue */
+  color: #fff;
+  border-bottom: 2px solid #00668B; /* Dark blue */
+  font-weight: bold;
+  padding: 12px 15px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header,
+  .top-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .main-content,
+  .sidebar {
+    padding: 10px;
+    background-color: aliceblue;
+  }
+
+  .sidebar ul {
+    text-align: center;
+  }
+
+  .sidebar li {
+    display: block; /* Stack items vertically */
+    margin: 0 auto; /* Center items horizontally */
+  }
+
+  .toggle-sidebar-btn {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  .logout-btn {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    display: none; /* Hide sidebar by default */
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #f9fafc;
+    padding: 20px;
+    top: 60px; /* Adjust top position */
+  }
+
+  .sidebar.show {
+    display: block;
+  }
+
+  .toggle-sidebar-btn {
+    display: block;
+    text-align: right; /* Align button to the right */
+    margin-right: 20px; /* Add margin for better spacing */
+  }
+}
+/* Adjust sidebar for mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    display: block;
+  }
+}
+
+/* App.css */
+
+/* Style for the menu icon */
+.menu-icon {
+  color: white; /* Set color to white */
+  cursor: pointer;
+}
+
+/* Show sidebar by default for desktop view */
+.sidebar {
+  display: block;
+}
+
+/* Hide sidebar for mobile view */
+@media (max-width: 767px) {
+  .sidebar {
+    display: none;
+  }
+}
+ 
+ 
+.nav-link.active{
+  color: #ffffff !important; /* Default color for normal links */
+  font-weight: bold;
+
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #cce5ff !important;
+}
+.no-right-margin {
+  margin-right:0px !important; /* Override Bootstrap's default margin-right */
+}
